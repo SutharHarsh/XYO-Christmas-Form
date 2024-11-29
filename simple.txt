@@ -1,0 +1,60 @@
+<section id="form-section" class="w-full py-12 bg-[#e0f1f0] flex sm:items-center justify-center">
+    <div class="text-[#813b40] container mx-auto lg:px-6 flex lg:flex-row sm:flex-col items-center justify-between">
+        <!-- Left Side: Form -->
+        <div class="lg:w-1/2 lg:pr-12">
+            <h2 class="text-[#17398f] text-4xl font-semibold lg:ml-10 lg:pb-5 sm:text-center lg:text-left sm:pb-4 sm:pt-4">Get in Touch</h2>
+            <h2 class="text-[#17398f] text-2xl font-semibold lg:ml-10 lg:pt-0 lg:mt-0 sm:text-center lg:text-left sm:pb-8 sm:pt-0">✆ 9901558900</h2>
+            <form method="post" name="contact-form" action="https://script.google.com/macros/s/AKfycbwlh2VM0MIiUIvFWZSBfVsI2XtL-971Rtnjp_QNAbSi4UNm85hLLbNu_pfg68fTd_aoqw/exec" id="contactForm" class="bg-white font-Actor sm:p-8 lg:p-10 lg:ml-10 shadow-lg rounded-lg transition-all duration-300" novalidate>
+                <!-- Name of the Child -->
+                <div class="mb-6">
+                    <label for="childName" class="block text-lg font-medium mb-2">Name of the Child:</label>
+                    <input type="text" name="child-name" id="childName" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="Enter your child's name" required>
+                </div>
+    
+                <!-- Class of the Child -->
+                <div class="mb-6">
+                    <label for="childClass" class="block text-lg font-medium mb-2">Class of the Child:</label>
+                    <input type="number" name="child-class" id="childClass" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="Enter the class (1-10)" min="1" max="10" required>
+                </div>
+    
+                <!-- WhatsApp Contact Number -->
+                <div class="mb-6">
+                    <label for="contactNumber" class="block text-lg font-medium mb-2">WhatsApp Contact Number:</label>
+                    <input type="tel" name="whatsapp-number" id="contactNumber" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="Enter WhatsApp contact number" pattern="[0-9]{10}" required>
+                </div>
+    
+                <!-- Submit Button -->
+                <button type="submit" value="submit" id="submit" class="w-full bg-[#17398f] text-white px-4 py-2 rounded-md hover:bg-blue-500 focus:ring-2 focus:ring-blue-600">
+                    Submit
+                </button>
+            </form>
+        </div>
+    
+        <!-- Right Side: Text Content -->
+        <div class="lg:w-1/2 mt-12 lg:mt-0">
+            <h2 id="form-right-text" class="bt_text text-[#17398f] font-bold lg:text-3xl mb-6 lg:text-left sm:px-7 sm:text-center sm:text-2xl">
+                Ready to Transform Your Child's Math Journey?
+            </h2>
+            <p class="font-Roboto text-justify lg:text-left lg:font-normal sm:font-normal text-xl sm:text-center sm:text-xl sm:px-7 leading-relaxed">
+                Discover the difference with myXYO and take the first step toward a brighter future in Maths!
+                Whether it’s excelling in the classroom, preparing for exams, or boosting confidence in problem-solving, we’re here to help.
+            </p>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+
+const createSnowFlake = () => {
+    const snowFlake = document.createElement("div");
+    snowFlake.classList.add("snowflake");
+    snowFlake.style.left = `${Math.random() * window.innerWidth}px`;
+    document.body.appendChild(snowFlake);
+    setTimeout(() => snowFlake.remove(), 10000);
+  };
+  
+  setInterval(createSnowFlake, 200);
